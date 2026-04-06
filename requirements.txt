@@ -1,0 +1,9 @@
+openenv-core
+pydantic>=2.0.0
+openai
+python-dotenv
+pyyaml
+requests
+uvicorn
+fastapi
+python-multipart

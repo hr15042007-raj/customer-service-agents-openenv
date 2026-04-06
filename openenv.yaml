@@ -1,0 +1,29 @@
+# OpenEnv Configuration for Customer Service Agents (CSA-001)
+version: "1.0.0"
+name: "customer-service-agents-openenv"
+type: "environment"
+category: "support"
+id: "CSA-001"
+description: "A professional-grade customer service environment simulating Zendesk/Shopify workflows."
+
+tasks:
+  - id: "T001"
+    name: "Easy: Order Status Inquiry"
+    difficulty: "easy"
+  - id: "T002"
+    name: "Medium: Damaged Refund Processing"
+    difficulty: "medium"
+  - id: "T003"
+    name: "Hard: Policy Enforcement (Out-of-Window)"
+    difficulty: "hard"
+
+spec:
+  observation_space: "Pydantic Model (Observation)"
+  action_space: "Pydantic Model (Action)"
+  reward_range: [-1.0, 1.0]
+
+metadata:
+  framework: "openenv-core"
+  python_version: "3.11"
+  tags: ["meta-hackathon", "pytorch", "agentic-ai", "customer-service", "shopify", "zendesk"]
+  official_validator: "openenv validate"
